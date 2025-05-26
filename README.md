@@ -39,8 +39,8 @@ A full-stack real-time collaborative whiteboard platform that enables multiple u
 
 #### Clone the Repo 
 ```bash 
-git clone https://github.com/Ravi3727/White-Board-Web-Application.git 
-cd whiteboard-clean 
+git clone https://github.com/Ravi3727/White-Board-Web-Application.git  
+cd white-Board-Web-Application   
 ``` 
 
 ##### Backend Setup   
@@ -58,8 +58,8 @@ cd frontend
 npm install 
 npm run dev 
 ``` 
-Frontend: http://localhost:5173 
-Backend: http://localhost:3000 
+Frontend: http://localhost:5173  
+Backend: http://localhost:3000  
 
 #### Docker Setup (One Command) 
 Ensure Docker and Docker Compose are installed. 
@@ -68,17 +68,18 @@ Build & Run the App
 ``` 
 docker-compose up --build
 ``` 
-🎯 Frontend will be live at: http://localhost 
-🔙 Backend at: http://localhost:3000 
+🎯 Frontend will be live at: http://localhost  
+🔙 Backend at: http://localhost:3000  
 
-##### 📁 Folder Structure 
-
-whiteboard/ 
+##### 📁 Folder Structure  
+``` 
+whiteboard/  
 │ 
-├── frontend/        # React + Vite frontend 
+├── frontend/        # React + Vite frontend  
 ├── backend/         # Express backend 
 ├── docker-compose.yml 
 └── README.md 
+```
 
 ##### 🔐 Environment Variables 
 Backend .env (auto-provided in docker-compose) 
