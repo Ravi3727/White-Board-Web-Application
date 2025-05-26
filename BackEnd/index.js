@@ -10,7 +10,7 @@ require("dotenv").config();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173","http://localhost"],
+    origin: ["http://localhost:5173","http://localhost", "https://white-board-web-application.vercel.app"],
     credentials: true,
   })
 );
