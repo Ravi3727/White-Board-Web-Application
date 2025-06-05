@@ -59,9 +59,9 @@ function Board() {
           break;
         case TOOL_ITEMS.BRUSH:
           context.fillStyle = element.stroke;
-          const path = new Path2D();
-          element.path = path;
-          // console.log(element.path instanceof Path2D); // should be true
+          // const path = new Path2D();
+          // element.path = path;
+          // console.log(element.path instanceof Path2D); 
           // console.log("ye  h type ", element.path);
           context.fill(element.path);
           context.restore();

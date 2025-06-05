@@ -26,7 +26,7 @@ export const createElement = (
     size,
   };
   let options = {
-    seed: id + 1, // id can't be zero
+    seed: id + 1, 
     fillStyle: "solid",
   };
   if (stroke) {

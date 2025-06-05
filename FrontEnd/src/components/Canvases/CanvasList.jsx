@@ -1,6 +1,5 @@
 import axios from "axios";
-import React, { useContext, useState } from "react";
-import boardContext from "../../store/board-context";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const CanvasList = ({ canvases }) => {
@@ -141,23 +140,19 @@ const CanvasList = ({ canvases }) => {
             <p className="text-white">Loading...</p>
           </div>
         ) :
-          <div className="mt-16 w-full flex flex-col md:flex-row justify-evenly items-center md:flex-wrap gap-4">
+          (<div className="mt-16 w-full flex flex-col md:flex-row justify-evenly items-center md:flex-wrap gap-4">
             {canvases.length > 0 ? (
               canvases?.map((canvas) => (
                 <div
                   key={canvas._id}
                   className="md:p-4 bg-white shadow-3xl w-full md:w-3/12 min-h-64 rounded-lg border flex flex-col justify-evenly border-gray-200"
                 >
-
-
                   <div className="mx-auto flex flex-col items-center">
                     <h3 className="font-bold text-2xl leading-10 text-gray-800">{canvas.name}</h3>
                     <p className="text-lg text-gray-700 leading-10">
                       Created At: {new Date(canvas.createdAt).toLocaleString()}
                     </p>
                   </div>
-
-
                   <div className="flex gap-3 justify-center items-center flex-wrap">
                     <button onClick={() => openCanvas(canvas._id)} className="bg-blueNew text-white p-2 rounded-md mt-2">
                       Open
@@ -178,7 +173,7 @@ const CanvasList = ({ canvases }) => {
             ) : (
               <p className="text-white">No canvases available</p>
             )}
-          </div>
+          </div>)
       }
     </div>
   );
